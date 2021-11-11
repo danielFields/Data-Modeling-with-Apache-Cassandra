@@ -35,7 +35,7 @@ populate_tables = [table1_populate,table2_populate,table3_populate]
 # Call script to process data file.
 exec(open("Proc_Data.py").read())
 
-all_events = pd.read_csv("./Proccessed Data.csv")
+all_events = pd.read_csv("./event_data_new.csv")
 
 
 print("\nCreating Database")
@@ -65,7 +65,7 @@ for i in range(len(create_tables_from_data)):
 
     
 #Remove intermediate csv file no longer needed.
-os.remove("./Proccessed Data.csv")
+os.remove("./event_data_new.csv")
     
     
 print("Shutting Down Cluster")
