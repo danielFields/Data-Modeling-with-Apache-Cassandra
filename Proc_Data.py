@@ -57,7 +57,7 @@ all_events.drop(['firstName','lastName'],axis = 1,inplace=True)
 #Convert tye to match the type expected by the database
 all_events['userId'] = all_events['userId'].astype(int)
 
-all_events.to_csv("./Proccessed Data.csv",index = False)
+all_events.to_csv("./event_data_new.csv",index = False)
 
 #Remove last progress print out
 print("\r")
